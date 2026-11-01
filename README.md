@@ -6,14 +6,28 @@ I build agentic systems that ship production software: LangGraph multi-agent wor
 human approval gates, RAG over enterprise corpora, and the LLMOps underneath both. Currently
 leading a 4–6 engineer AI team.
 
-Most of my work lives in private company repositories, so the repos below are **technical case
-studies** — architecture, design decisions, trade-offs and the things that went wrong — written
-from the real codebases rather than from memory. Every number in them was measured, and where a
-component was a teammate's, it says so.
+---
+
+### Open source
+
+**[Agentic Mahoraga](https://github.com/ahmadrishi/agentic-mahoraga)** — a Claude Code plugin (MIT,
+v0.1) that forges `file:line`-grounded skills from your codebase, then replays your own shipped
+tickets blind, against a bare-model baseline, to measure whether the skills help. An edit to the
+agent's guidance is kept only if it wins on held-out tickets. The loop is closed and measured; no
+edit has earned a KEEP on a real repo yet, and the README says so.
+
+```
+/plugin marketplace add ahmadrishi/agentic-mahoraga
+```
 
 ---
 
 ### Selected work
+
+Most of my work lives in private company repositories, so the repos below are **technical case
+studies** — architecture, design decisions, trade-offs and the things that went wrong — written
+from the real codebases rather than from memory. Every number in them was measured, and where a
+component was a teammate's, it says so.
 
 | | |
 |---|---|
